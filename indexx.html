@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="rigrt">Everette's Florist</div>
+        <div class="left">
+            <ul>
+                <li>Our products </li>
+                <li>Pricing</li>
+              <li>Your Orders</li>
+<li><i class="fas fa-shopping-bag"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main-slider">
+            <div><img src="photos/flower3.jpeg" alt="Spring 4"></div>
+            <div><img src="photos/flower1.webp" alt="Spring 1"></div>
+            <div><img src="photos/flower2.webp" alt="Spring 2"></div>
+            <div><img src="photos/flower5.webp" alt="Spring 3"></div>
+        </div>
+        <hr class="separator">
+
+        <div class="product">
+           <h1 class="main-title">Our Products</h1>
+            <div>
+                <img src="photos/roses.webp" alt="">
+                <h1>Roses</h1>
+                <h3>The most famous and classic choice for any occasion</h3>
+                <h2 class="price">34$</h2>
+                <button>Add to Cart</button>
+            </div>
+            <div>
+                 <img src="photos/babyrose.webp" alt="">
+                <h1>Baby Roses (Spray Roses)</h1>
+                <h3>Smaller, delicate roses that grow in clusters on a single stem</h3>
+                <h2 class="price">22$</h2>
+                <button>Add to Cart</button>
+            </div>
+            <div> 
+                <img src="photos/Lisianthus.jpeg" alt="">
+                <h1>Lisianthus</h1>
+                <h3> Elegant flowers that look like a mix between a rose and a poppy; they last a long time.</h3>
+                <h2 class="price">42$</h2>
+                <button>ِAdd to Cart</button>
+            </div>
+            <div> 
+                <img src="photos/Orchids.jpeg" alt="">
+                <h1>Orchids</h1>
+                <h3>Exotic and luxurious flowers, often sold as cut stems or potted plants.</h3>
+                <h2 class="price">56$</h2>
+                <button>Add to Cart</button>
+            </div>
+            <div>
+                <img src="photos/Carnations.jpg" alt="">
+                <h1>Carnations</h1>
+                <h3>Very durable and come in almost every color imaginable.</h3>
+                <h2 class="price">29$</h2>
+                <button>Add to Cart</button>
+           </div>
+            <div>
+                <img src="photos/Lilies.jpeg" alt="">
+                <h1>Lilies</h1>
+                <h3> Large, fragrant, and very eye-catching flowers (like Oriental or Stargazer lilies).</h3>
+                <h2 class="price">47$</h2>
+                <button>Add to Cart</button>
+           </div>
+            <div>
+                <img src="photos/Sunflowrs.jpeg" alt="">
+                <h1>Sunflowers</h1>
+                <h3>Bright and cheerful flowers that bring a sunny feel to any arrangement</h3>
+                <h2 class="price">48$</h2>
+                <button>Add to Cart</button>
+           </div>
+            <div>
+                <img src="photos/Chrysanthemums (Mums).jpeg" alt="">
+                <h1>Chrysanthemums (Mums)</h1>
+                <h3>Diverse flowers often used to add volume and texture to bouquets.</h3>
+                <h2 class="price">56$</h2>
+                <button>Add to Cart</button>
+           </div>
+            <div>
+                <img src="photos/Tulips.jpeg" alt="">
+                <h1>Tulips</h1>
+                <h3>Known for their simple, sleek shape and vibrant spring colors</h3>
+                <h2 class="price">45#</h2>
+                <button>Add to Cart</button>
+           </div>
+        </div>
+        <div class="contact-section">
+    <div class="form-container">
+        <h1>Contact Info</h1>
+        <form>
+            <div class="input-group">
+                <label for="txt">Name</label>
+                <input type="text" id="txt" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="01xxxxxxxxx" required>
+            </div>
+
+            <div class="input-group">
+                <label for="Eml">Email</label>
+                <input type="email" id="Eml" placeholder="Enter your Email">
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+            </div>
+
+            <div class="input-group">
+                <label>Any Notes?</label>
+                <textarea placeholder="Tell us more..." rows="4"></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Submit" class="submit-btn">
+                <input type="reset" value="Re-enter" class="reset-btn">
+            </div>
+        </form>
+    </div>
+</div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.main-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+
+</html>
